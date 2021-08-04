@@ -1,12 +1,10 @@
 class Mammal
     attr_accessor :health
-    def initialize()
+    def initialize(health)
         
-        @health= 150
+        @health= health
     end
     def display_health
         puts "Health is: #{@health}"
     end
 end
-my_mammal = Mammal.new()
-my_mammal.display_health()
